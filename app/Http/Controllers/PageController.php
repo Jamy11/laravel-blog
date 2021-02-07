@@ -17,6 +17,8 @@ class PageController extends Controller
     }
     public function service()
     {
-        return view('pages.service');
+        $data = ['title'=>'Services','services' => ['Web Design', 'Pogramming', 'SEO'] ];
+
+        return view('pages.service' , $data);//->with($data);
     }
 }

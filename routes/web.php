@@ -17,3 +17,7 @@ Route::get('/', 'PageController@index');
 Route::get('/about','PageController@about');
 Route::get('/service','PageController@service');
 // Route::get('/about','PageController@about');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
